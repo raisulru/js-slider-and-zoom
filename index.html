@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <title>Image Overlay with Toolbar - Codrops</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="jquery-1.3.2.js"></script>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="image_container" id="img_cont">
+        <ul class="toolbar transparent" id="tlbar" style="display:none;">
+            <li>
+                <a class="zoomin" onclick="zoom(1.1)"></a>
+            </li>
+            <li>
+                <a class="zoomout" onclick="zoom(0.9)"></a>
+            </li>
+            <li>
+                <a class="shop"></a>
+            </li>
+            <li>
+                <a class="fav"></a>
+            </li>
+            <li>
+                <a class="edit"></a>
+            </li>
+            <li>
+                <a class="label"></a>
+            </li>
+            <li>
+                <a class="info"></a>
+            </li>
+        </ul>
+
+
+
+        <div id="imgcontainer">
+            <img src="images/image1.jpg" alt="example" id="img" width="500" height="375" />
+        </div>
+        <div class="navigation transparent" id="nav" style="display:none;">
+            <a class="previous" onClick="slide(-1);"></a>
+            <a class="next" onClick="slide(1);"></a>
+            <span class="price">$ 0.99</span>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
